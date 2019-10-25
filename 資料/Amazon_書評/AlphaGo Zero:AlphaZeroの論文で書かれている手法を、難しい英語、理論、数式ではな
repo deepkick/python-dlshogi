@@ -1,0 +1,32 @@
+AlphaGo Zero/AlphaZeroの論文で書かれている手法を、難しい英語、理論、数式ではなく、我々にもわかりやすい日本語とPythonのソースコードで解説している。
+ディープラーニングのモデルの設計、実装、学習、並列／高速化のテクニックを、実用レベルで楽しめるところまで。
+
+MNIST（手書き数字画像認識）の初心者向けのチュートリアルと機械学習ライブラリの使い方を解説する本が多い中、ここまで踏み込んでいるのは凄い。
+
+Googleのスパコン前提だった技術が、個人で楽しめる時代になりました。
+NVIDIAのGPUが載っているゲーミングPCも手頃な値段なのに、それだけで諦めるのはもったいない。
+
+（追記）
+Google Colaboratoryで無料のGPUがオンラインで使えるようになりました。
+誰もが手軽にディープラーニングを楽しめる世の中に。素晴らしい。
+・n1-highmem-2 instance
+・Ubuntu 17.10
+・2vCPU @ 2.2GHz
+・13GB RAM
+・40GB Free Space
+・GPU NVIDIA Tesla K80
+・アイドル状態が90分続くと停止
+・連続使用は最大12時間
+と制約はありますが、
+・cupy-cuda80==4.0.0b4
+・chainer==4.0.0b4
+をインストールして、書籍のコード（python-dlshogi）を動かすことができました。
+学習済みモデルは、Google Driveに格納することもできます。
+
+【参考】
+
+「【秒速で無料GPUを使う】TensorfFow/Keras/PyTorch/Chainer環境構築 on Colaboratory」
+https://qiita.com/tomo_makes/items/f70fe48c428d3a61e131
+
+「Colaboratoryで簡単便利にファイルのやり取りをする方法」
+https://funmatu.wordpress.com/2017/11/30/colaboratoryで簡単便利にファイルのやり取りをする方法/
